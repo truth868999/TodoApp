@@ -2,20 +2,33 @@
 //  ContentView.swift
 //  TodoApp
 //
-//  Created by 齊藤真 on 2022/12/13.
+//  Created by 齊藤真 on 2022/12/11.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var userData = UserData()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(userData.tasks) { task in
+                    Button(action: {
+                        guard let index = self.userData.tasks.firstIndex(of: task) else {
+                            return
+                        }
+                        self.userData.tasks[index].checked.toggle()
+                    })
+                    {
+                        ListRow(task: task.title, isCheck: task.checked)
+                    }
+                    }
+                Text("+")
+                    .font(.title)
+            }
+            .navigationTitle(Text("Tasks"))
+            .navigationBarItems(trailing: Text("delete"))
         }
-        .padding()
     }
 }
 
