@@ -17,6 +17,7 @@
 		988FC4492945EAF5001CB48C /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC4482945EAF5001CB48C /* ListRow.swift */; };
 		988FC44B29474BC4001CB48C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC44A29474BC4001CB48C /* UserData.swift */; };
 		988FC44D29474D28001CB48C /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC44C29474D28001CB48C /* UserTask.swift */; };
+		98E683DC2949AD17004B68C5 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E683DB2949AD17004B68C5 /* Draft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		988FC4482945EAF5001CB48C /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		988FC44A29474BC4001CB48C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		988FC44C29474D28001CB48C /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
+		98E683DB2949AD17004B68C5 /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				988FC41E2945E050001CB48C /* TodoAppApp.swift */,
 				988FC4202945E050001CB48C /* ContentView.swift */,
+				98E683DB2949AD17004B68C5 /* Draft.swift */,
 				988FC44C29474D28001CB48C /* UserTask.swift */,
 				988FC44A29474BC4001CB48C /* UserData.swift */,
 				988FC4482945EAF5001CB48C /* ListRow.swift */,
@@ -269,6 +272,7 @@
 				988FC44D29474D28001CB48C /* UserTask.swift in Sources */,
 				988FC4212945E050001CB48C /* ContentView.swift in Sources */,
 				988FC41F2945E050001CB48C /* TodoAppApp.swift in Sources */,
+				98E683DC2949AD17004B68C5 /* Draft.swift in Sources */,
 				988FC44B29474BC4001CB48C /* UserData.swift in Sources */,
 				988FC4492945EAF5001CB48C /* ListRow.swift in Sources */,
 			);
