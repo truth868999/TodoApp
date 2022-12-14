@@ -27,8 +27,18 @@ struct ContentView: View {
                     .font(.title)
             }
             .navigationTitle(Text("Tasks"))
-            .navigationBarItems(trailing: Text("delete"))
+            .navigationBarItems(trailing: Button(action: {
+                DeleteTask()
+            })
+            {
+                Text("delete")
+            }
+            )
         }
+    }
+    func DeleteTask() {
+        let necessaryTask = self.userData.tasks.filter({!$0.checked})
+        self.userData.tasks = necessaryTask
     }
 }
 
